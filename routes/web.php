@@ -3,11 +3,15 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomeController;
+
+Route::get('/', [HomeController::class, 'index']);
+
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
-|--------------------------------------------------------------------------
+|-------------------------------------------------------------------------
 | Semua route aplikasi didaftarkan di sini.
 | Middleware 'auth' memastikan user sudah login.
 | Middleware 'role:...' membatasi akses sesuai role.
